@@ -3,9 +3,10 @@ package day.one;
 import java.util.ArrayList;
 import java.util.List;
 
+import solver.tester.Solver;
 import utils.Utils;
 
-public class Day1_Solver {
+public class Day1_Solver implements Solver {
 
 	private List<Integer> numberList;
 	private final int[] numbers;
@@ -34,7 +35,7 @@ public class Day1_Solver {
 			}
 		}
 
-		System.out.println("First puzzle answer is: " + numberList.stream().mapToInt(x -> x.intValue()).sum());
+		System.out.println("Day 1 First puzzle answer is: " + numberList.stream().mapToInt(x -> x.intValue()).sum());
 	}
 
 	public void solveSecondPuzzle() {
@@ -59,7 +60,7 @@ public class Day1_Solver {
 
 		}
 
-		System.out.println("Second puzzle answer is: " + numberList.stream().mapToInt(x -> x.intValue()).sum());
+		System.out.println("Day 1 Second puzzle answer is: " + numberList.stream().mapToInt(x -> x.intValue()).sum());
 	}
 
 }
