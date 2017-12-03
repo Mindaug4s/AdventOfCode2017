@@ -3,7 +3,7 @@ package day.one;
 import java.util.ArrayList;
 import java.util.List;
 
-import solver.tester.Solver;
+import day.Solver;
 import utils.Utils;
 
 public class Day1_Solver implements Solver {

@@ -1,4 +1,4 @@
-package solver.tester;
+package day;
 
 public interface Solver {
 	

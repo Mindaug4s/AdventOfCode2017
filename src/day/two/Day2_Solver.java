@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-import solver.tester.Solver;
+import day.Solver;
 import utils.Utils;
 
 public class Day2_Solver implements Solver {

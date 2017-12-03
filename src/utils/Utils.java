@@ -9,8 +9,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Utils {
-	
+
 	public static int[] getArrayFilledWithNumbers(String puzzleInput) {
 		int[] numbers = new int[puzzleInput.length()];
 		for (int i = 0; i < numbers.length; i++) {
@@ -19,8 +20,7 @@ public class Utils {
 		}
 		return numbers;
 	}
-	
-	
+
 	public static Object[][] fillArrayWithDataFromFile(String fileName) {
 
 		String thisLine;
@@ -42,7 +42,7 @@ public class Utils {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		//lines.remove(0);
+		// lines.remove(0);
 		String[][] array = new String[lines.size()][0];
 
 		try {
@@ -52,6 +52,31 @@ public class Utils {
 		}
 
 		return lines.toArray(array);
+	}
+
+	public static String makeSeparatorLine(int[][] puzzlyArray) {
+
+		String separatorLine = "\n";
+
+		for (int i = 0; i < puzzlyArray.length; i++) {
+			separatorLine += "--- ";
+		}
+		return separatorLine;
+
+	}
+
+	public static void initialize2DArrayWithZeroValues(int[][] puzzleArray) {
+		
+		for (int i = 0; i < puzzleArray.length; i++) {
+
+			for (int k = 0; k < puzzleArray[i].length; k++) {
+
+				puzzleArray[i][k] = 0;
+			}
+
+		}
+		
+		
 	}
 
 }
