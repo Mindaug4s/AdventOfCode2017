@@ -14,7 +14,7 @@ public class Day2_Solver implements Solver {
 
 	public Day2_Solver(String fileName) {
 
-		numbers = (String[][]) Utils.fillArrayWithDataFromFile(fileName);
+		numbers = (String[][]) Utils.fillArrayWithDataFromFile(fileName, "\\t");
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class Day2_Solver implements Solver {
 			int[] currentArray = Stream.of(numbers[i]).mapToInt(Integer::parseInt).toArray();
 
 			for (int k = 0; k < numbers[i].length; k++) {
-				
+
 				for (int m = k + 1; m < numbers[i].length; m++) {
 
 					if ((currentArray[k] < currentArray[m]) && (currentArray[m] % currentArray[k] == 0)) {

@@ -5,9 +5,9 @@ import java.util.List;
 
 import day.Solver;
 import utils.NeighbourCellCoordinates;
-import utils.ArrayScreenRenderer;
+//import utils.ArrayScreenRenderer;
 import utils.Coordinates;
-import utils.Renderer;
+//import utils.Renderer;
 import utils.Utils;
 
 public class Day3_Solver implements Solver {
@@ -87,7 +87,7 @@ public class Day3_Solver implements Solver {
 	public void solveSecondPuzzle() {
 
 		int[][] puzzleArray = new int[10][10];
-		Renderer renderer = new ArrayScreenRenderer(puzzleArray);
+		//Renderer renderer = new ArrayScreenRenderer(puzzleArray);
 
 		Utils.initialize2DArrayWithZeroValues(puzzleArray);
 		positionOfOne = setPositionOfOne(puzzleArray.length);

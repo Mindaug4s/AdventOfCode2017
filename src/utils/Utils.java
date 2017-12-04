@@ -21,7 +21,7 @@ public class Utils {
 		return numbers;
 	}
 
-	public static Object[][] fillArrayWithDataFromFile(String fileName) {
+	public static Object[][] fillArrayWithDataFromFile(String fileName, String spliterator) {
 
 		String thisLine;
 
@@ -37,7 +37,7 @@ public class Utils {
 
 		try {
 			while ((thisLine = myInput.readLine()) != null) {
-				lines.add(thisLine.split("\\t"));
+				lines.add(thisLine.split(spliterator));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
