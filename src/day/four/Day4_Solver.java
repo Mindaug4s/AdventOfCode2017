@@ -13,8 +13,8 @@ public class Day4_Solver implements Solver {
 	private List<String[]> validPassPharases;
 	private List<String[]> secondValidPassPhrases;
 
-	public Day4_Solver(String day4Puzzleinput) {
-		passList = (String[][]) Utils.fillArrayWithDataFromFile(day4Puzzleinput, " ");
+	public Day4_Solver(String fileName) {
+		passList = (String[][]) Utils.fillArrayWithDataFromFile(fileName, " ");
 	}
 
 	@Override
