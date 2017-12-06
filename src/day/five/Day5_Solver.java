@@ -13,7 +13,7 @@ public class Day5_Solver implements Solver {
 
 	@Override
 	public void solveFirstPuzzle() {
-		int[] numbers = convertStringArrayToInt(numberList);
+		int[] numbers = Utils.convertStringArrayToInt(numberList);
 
 		int currentPosition = 0;
 		int jumpsMade = 0;
@@ -35,7 +35,7 @@ public class Day5_Solver implements Solver {
 
 	@Override
 	public void solveSecondPuzzle() {
-		int[] numbers = convertStringArrayToInt(numberList);
+		int[] numbers = Utils.convertStringArrayToInt(numberList);
 
 		int currentPosition = 0;
 		int jumpsMade = 0;
@@ -58,17 +58,6 @@ public class Day5_Solver implements Solver {
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Day 5 Second puzzle answer is: " + jumpsMade);
 		}
-	}
-
-	private int[] convertStringArrayToInt(String[][] stringArray) {
-
-		int[] intArray = new int[stringArray.length];
-
-		for (int i = 0; i < stringArray.length; i++) {
-			intArray[i] = Integer.parseInt(stringArray[i][0]);
-		}
-
-		return intArray;
 	}
 
 }

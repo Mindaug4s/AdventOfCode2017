@@ -78,5 +78,18 @@ public class Utils {
 		
 		
 	}
+	
+	
+	public static int[] convertStringArrayToInt(String[][] stringArray) {
+
+		int[] intArray = new int[stringArray.length];
+
+		for (int i = 0; i < stringArray.length; i++) {
+			intArray[i] = Integer.parseInt(stringArray[i][0]);
+		}
+
+		return intArray;
+	}
+
 
 }

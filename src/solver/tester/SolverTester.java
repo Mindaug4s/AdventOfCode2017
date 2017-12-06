@@ -3,6 +3,7 @@ package solver.tester;
 import day.five.Day5_Solver;
 import day.four.Day4_Solver;
 import day.one.Day1_Solver;
+import day.six.Day6_Solver;
 import day.three.Day3_Solver;
 import day.two.Day2_Solver;
 
@@ -22,6 +23,9 @@ public class SolverTester {
 	
 	final static String day5_puzzleInput = "dataFiles/day5_puzzleInput.txt";
 	final static String day5_puzzleInput2 = "dataFiles/day5_puzzleInput2.txt";
+	
+	final static String day6_puzzleInput = "dataFiles/day6_puzzleInput.txt";
+	final static String day6_puzzleInput2 = "dataFiles/day6_puzzleInput2.txt";
 
 	public static void main(String[] args) {
 
@@ -30,6 +34,7 @@ public class SolverTester {
 		Day3_Solver day3 = new Day3_Solver(day3_puzzleInput);
 		Day4_Solver day4 = new Day4_Solver(day4_puzzleInput);
 		Day5_Solver day5 = new Day5_Solver(day5_puzzleInput);
+		Day6_Solver day6 = new Day6_Solver(day6_puzzleInput);
 		
 		
 
@@ -47,6 +52,8 @@ public class SolverTester {
 		
 		day5.solveFirstPuzzle();
 		day5.solveSecondPuzzle();
+		
+		day6.solveFirstPuzzle();
 		
 
 	}
